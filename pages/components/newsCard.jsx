@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Card = styled.div`
   width: 90%;
   max-width: ${(prop) => (prop.align ? "1000px" : " 360px")};
-  min-width: 400px;
+  min-width: 310px;
   font-family: "Gilroy-Regular", sans-serif;
   display: flex;
   flex-direction: ${(prop) => prop.align || "column"};
@@ -15,7 +15,7 @@ const Card = styled.div`
   flex: 1;
   cursor: pointer;
   flex-wrap: wrap;
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     min-width: 310px;
   }
   img {
@@ -27,6 +27,9 @@ const Card = styled.div`
     flex: 3;
     flex-basis: 310px;
     width: ${(prop) => (prop.align ? "70%" : "100%")};
+    @media (max-width: 900px) {
+      width: 100%;
+    }
     .labels {
       width: 100%;
       font-weight: 300;

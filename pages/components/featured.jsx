@@ -19,7 +19,7 @@ const Feature = styled.div`
     display: flex;
     flex-direction: ${(prop) => prop.alignContainer || "row"};
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1.5em;
   }

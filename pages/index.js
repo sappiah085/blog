@@ -25,6 +25,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div
+        aria-controls="nav"
+          aria-label="toggle button"
+          tabIndex="1"
           className={`${styles.toggle} ${toggle && styles.open}`}
           onClick={() => setToggle((pre) => !pre)}
         ></div>
@@ -40,7 +43,7 @@ export default function Home() {
           <div className={styles.lines}></div>
           <div className={styles.lines}></div>
         </div>
-        <nav className={`${styles.nav} ${toggle && styles.open}`}>
+        <nav id="nav" className={`${styles.nav} ${toggle && styles.open}`}>
           <a href="/" className={styles.label}>
             Samuel
           </a>

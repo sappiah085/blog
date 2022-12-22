@@ -13,12 +13,14 @@
 .main {
   width: 100%;
   height: 100vh;
+  max-width: 1500px;
   z-index: 2;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3em;
+  align-self: center;
   justify-content: flex-start;
 }
 .animate {
@@ -199,7 +201,7 @@
   width: 100%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .nav {
     right: -200%;
     position: absolute;
@@ -212,7 +214,7 @@
     transition: 1s ease-in-out;
   }
   .main {
-    height: 60vh;
+    height: fit-content;
   }
   .nav.second {
     display: none;
